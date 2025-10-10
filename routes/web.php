@@ -3,6 +3,7 @@
 use App\Http\Controllers\provincesTest;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Counter;
+use Livewire\Volt\Volt;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,8 +15,9 @@ use App\Livewire\Counter;
 |
 */
 
-Route::view('/', 'welcome');
-
+// Route::view('/', 'welcome');
+   Volt::route('/', 'client.deal.fpttelecom')
+        ->name('deal.fpttelecom');
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
