@@ -21,4 +21,9 @@ class Client extends Model
         'deleted_at',
         'deleted',
     ];
+
+    public function product()
+    {
+        return $this->belongsTo(WifiProduct::class,'wifi_product_id','id');
+    }
 }
