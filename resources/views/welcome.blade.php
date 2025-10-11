@@ -35,7 +35,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 20px;
-            padding: 20px 10%;
+            padding: 20px 3%;
         }
 
         .plan {
@@ -116,7 +116,7 @@
         }
 
         .utility {
-            min-height: 200px;
+            min-height: 230px;
         }
 
 
