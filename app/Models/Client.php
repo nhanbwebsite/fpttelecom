@@ -24,6 +24,14 @@ class Client extends Model
 
     public function product()
     {
-        return $this->belongsTo(WifiProduct::class,'wifi_product_id','id');
+        return $this->belongsTo(WifiProduct::class, 'wifi_product_id', 'id');
+    }
+    public function province()
+    {
+        return $this->belongsTo(Province::class, 'province_code', 'code');
+    }
+    public function commune()
+    {
+        return $this->belongsTo(Commune::class, 'commune_code', 'code');
     }
 }

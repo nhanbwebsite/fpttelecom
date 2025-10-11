@@ -63,14 +63,14 @@
         }
 
         .plan-header {
-            padding: 25px;
-            color: #fff;
+            /* padding: 25px; */
+            /* color: #fff; */
             text-align: center;
             min-height: 165px;
         }
 
         .giga {
-            background: linear-gradient(135deg, #1e88e5, #42a5f5);
+            /* background: linear-gradient(135deg, #1e88e5, #42a5f5); */
         }
 
         .sky {
@@ -96,7 +96,7 @@
         }
 
         .plan-content {
-            padding: 25px;
+            padding: 25px 15px;
             /* text-align: center; */
         }
 
@@ -141,6 +141,32 @@
             min-height: 230px;
         }
 
+        .image__product {
+            width: 100%;
+            height: 250px;
+            /* bạn có thể chỉnh tuỳ ý, ví dụ 180px, 220px */
+            overflow: hidden;
+            border-radius: 8px;
+            /* tuỳ chọn */
+
+        }
+
+        .product__name {}
+
+        .product__desc {
+            height: 80px;
+            min-height: 60px;
+            font-weight: bold;
+        }
+
+        .image__product img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* cắt ảnh vừa khung mà không méo */
+            object-position: center;
+            display: block;
+        }
 
         .btn {
             display: inline-block;
@@ -194,6 +220,39 @@
                 left: 0;
             }
         }
+
+        .social-float {
+            position: fixed;
+            right: 20px;
+            bottom: 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 999;
+        }
+
+        .social-float .icon {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background: #004a75;
+            /* xanh đậm */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .social-float .icon img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .social-float .icon:hover {
+            transform: translateY(-4px);
+            background: #0073b1;
+        }
     </style>
 </head>
 
@@ -244,6 +303,25 @@
     </div>
     </div>
 
+    <!-- Floating Contact Buttons -->
+    <div class="social-float">
+        <a href="tel:0984500465" class="icon phone" title="Gọi điện">
+            <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone">
+        </a>
+        <a href="https://zalo.me/0939294917" target="_blank" class="icon zalo" title="Zalo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo">
+        </a>
+        <a href="https://m.me/yourpage" target="_blank" class="icon messenger" title="Messenger">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Facebook_Messenger_4_Logo.svg"
+                alt="Messenger">
+        </a>
+        <a href="https://maps.app.goo.gl/yourlocation" target="_blank" class="icon maps" title="Bản đồ">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Google_Maps_icon.svg" alt="Maps">
+        </a>
+        <a href="#" class="icon to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Lên đầu trang">
+            <img src="https://cdn-icons-png.flaticon.com/512/892/892692.png" alt="Up">
+        </a>
+    </div>
 
 
     <footer></footer>

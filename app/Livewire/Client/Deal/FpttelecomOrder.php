@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Client\Deal;
 
+use App\Events\UserOrder;
 use App\Livewire\Forms\OrderWifiForm;
 use App\Models\Client;
 use App\Models\Commune;
@@ -66,7 +67,11 @@ class FpttelecomOrder extends Component
                 'phone'             => $this->form->phone,
                 'wifi_product_id'   => $this->wifiProduct->id
             ];
-            Client::create($data);
+
+              $order =  Client::create($data);
+
+
+              event(new UserOrder($order));
             $this->dispatch('swal', [
                 'title' => 'Đăng ký lắp Wi-Fi thành công!',
                 'icon'  => 'success',

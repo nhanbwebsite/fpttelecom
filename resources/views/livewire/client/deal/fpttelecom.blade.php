@@ -16,14 +16,17 @@
             <div class="col-12 col-md-3 mb-4">
                 <div class="plan">
                     <div class="plan-header giga">
-                        <h2>{{$item->name}}</h2>
-                        <p>{{$item->description}}</p>
+                       <div class="image__product">
+                         <img class="mb-2"  src="{{ asset('image') }}/{{ $item->image }}" alt="">
+                       </div>
+                        <h2 class="mt-2 mb-2 product__name">{{$item->name}}</h2>
+                        <p class="product__desc"><i class="fa-regular fa-star me-2"></i> {{$item->description}}</p>
                     </div>
                     <div class="plan-content">
                         <p class="price">{{number_format($item->price)}}đ/tháng</p>
                         <ul class="utility">
                             @foreach ($utility as $util)
-                            <li><i class="fa-solid fa-check me-2"></i> {{ $util }}</li>
+                            <li><i class="fa-solid fa-check-double me-2"></i></i> {{ $util }}</li>
                             @endforeach
                         </ul>
 
