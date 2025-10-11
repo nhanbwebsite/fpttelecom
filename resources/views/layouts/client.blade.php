@@ -198,7 +198,9 @@
 </head>
 
 <body>
-
+    <div class="logo__ p-4">
+        <a href="/"><img src="{{ asset('image/fpt-logo.svg') }}" alt=""></a>
+    </div>
     <main>
         {{ $slot }}
     </main>

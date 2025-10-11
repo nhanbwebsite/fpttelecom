@@ -1,6 +1,5 @@
 <div>
     <header>
-        <img src="{{ asset('image/fpt-logo.svg') }}" alt="">
         <h1 class="title_">Chọn gói cước Internet FPT phù hợp với bạn</h1>
     </header>
 
