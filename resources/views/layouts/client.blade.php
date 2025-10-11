@@ -110,7 +110,7 @@
 
         .price {
             font-size: 1.4rem;
-            color: #000;
+            color: #ff6b17;
             font-weight: bold;
             margin-bottom: 15px;
             text-align: center;
@@ -126,6 +126,15 @@
             padding: 6px 0;
             font-size: 0.95rem;
             margin-left: 0;
+        }
+
+        .title_ {
+            color: #ff6b17;
+            font-weight: bold;
+        }
+
+        .plan-header.giga h2 {
+            font-weight: bold;
         }
 
         .utility {

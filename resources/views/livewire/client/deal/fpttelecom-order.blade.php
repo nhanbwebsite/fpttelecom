@@ -230,7 +230,7 @@
                 </div>
 
                 <p class="note mt-3">
-                    Bằng việc bấm Tiếp tục quý khách đã đồng ý để FPT Telecom liên hệ tư vấn dịch vụ phù hợp với nhu
+                    Bằng việc bấm Gửi thông tin đăng ký quý khách đã đồng ý để FPT Telecom liên hệ tư vấn dịch vụ phù hợp với nhu
                     cầu.
                     Chi tiết xem tại <a href="#">Chính sách xử lý dữ liệu cá nhân</a>.
                 </p>
