@@ -21,9 +21,6 @@ new #[Layout('layouts.guest')] class extends Component
      */
     public function register(): void
     {
-
-
-
         // $validated = $this->validate([
         //     'name' => ['required', 'string', 'max:255'],
         //     'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
@@ -35,6 +32,7 @@ new #[Layout('layouts.guest')] class extends Component
         // event(new Registered($user = User::create($validated)));
 
         // Auth::login($user);
+
 
         // $this->redirect(RouteServiceProvider::HOME, navigate: true);
     }
