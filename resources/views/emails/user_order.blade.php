@@ -2,18 +2,18 @@
 use App\Models\Commune;
 use App\Models\Province;
 use App\Models\WifiProduct;
-    $commune = Commune::where('code',$data->commune_code)->first();
-    $province = Province::where('code',$data->province_code)->first();
-    $product = WifiProduct::where('id',$data->wifi_product_id)->first();
+$commune = Commune::where('code',$data->commune_code)->first();
+$province = Province::where('code',$data->province_code)->first();
+$product = WifiProduct::where('id',$data->wifi_product_id)->first();
 @endphp
 
-    Thông tin đặt sản phẩm
-    <p>Tên khách hàng: {{ $data->name }}</p>
-    <p>Số điện thoại {{ $data->phone }} </p>
-    <p>Địa chỉ {{ $data->address }} - {{ $commune->name }} - {{ $province->name }}</p>
-    <p>Tên sản phẩm: {{$product->name}}</p>
-    {{-- <x-mail::button :url="''">
-        Button Text
-    </x-mail::button> --}}
+Thông tin đặt sản phẩm
+<p>Tên khách hàng: {{ $data->name }}</p>
+<p>Số điện thoại {{ preg_replace('/(\d{4})(\d{3})(\d{3})/','$1.$2.$3', $form->phone) }}</p>
+<p>Địa chỉ {{ $data->address }} - {{ $commune->name }} - {{ $province->name }}</p>
+<p>Tên sản phẩm: {{$product->name}}</p>
+{{-- <x-mail::button :url="''">
+    Button Text
+</x-mail::button> --}}
 
-    {{ __('FPT telecom') }}
+{{ __('FPT telecom') }}
