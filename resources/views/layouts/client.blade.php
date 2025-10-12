@@ -13,20 +13,14 @@
         content="Đăng ký gói cước Internet FPT tốc độ cao, ổn định, giá ưu đãi nhất. Hỗ trợ lắp đặt miễn phí toàn quốc.">
     <meta name="keywords" content="Internet FPT, Wifi FPT, Lắp mạng FPT, Gói cước FPT Telecom">
 
-    {{-- --}}
-
     <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ request()->url() }}"> <!-- Đổi link thật -->
+    <meta property="og:url" content="{{ request()->url() }}">
     <meta property="og:title" content="Gói cước Internet FPT tốc độ cao, ưu đãi hấp dẫn">
     <meta property="og:description"
         content="Tư vấn, lắp đặt Internet FPT chỉ trong 24h. Đăng ký ngay để nhận ưu đãi đến 50%.">
-    <meta property="og:image" content="{{ asset('image/goi360.png') }}"> <!-- Ảnh đại diện share -->
+    <meta property="og:image" content="{{ asset('image/goi360.png') }}">
     <meta property="og:image:alt" content="Gói cước Internet FPT tốc độ cao, ưu đãi hấp dẫn">
     <meta property="og:site_name" content="Internet FPT Telecom">
-
-
-    {{-- --}}
-
 
     <meta name="robots" content="index, follow">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
