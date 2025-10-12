@@ -17,7 +17,9 @@
                 <div class="plan">
                     <div class="plan-header giga">
                        <div class="image__product">
-                         <img class="mb-2"  src="{{ asset('image') }}/{{ $item->image }}" alt="">
+                        <a href="{{route('deal.fpttelecom.order',$item->slug)}}">
+                             <img class="mb-2"  src="{{ asset('image') }}/{{ $item->image }}" alt="">
+                        </a>
                        </div>
                         <h2 class="mt-2 mb-2 product__name">{{$item->name}}</h2>
                         <p class="product__desc"><i class="fa-regular fa-star me-2"></i> {{$item->description}}</p>

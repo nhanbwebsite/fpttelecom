@@ -206,7 +206,7 @@
                             <label class="form-label">Xã/Phường <span>*</span></label>
                             <select wire:model="form.commune" wire:change='communeValue($event.target.value)'
                                 class="form-select">
-                                <option selected disabled>Chọn xã/phường</option>
+                                <option selected >Chọn xã/phường</option>
                                 @foreach($communes as $item)
                                 <option value="{{ $item->code }}">{{$item->name}}</option>
                                 @endforeach
