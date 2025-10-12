@@ -304,24 +304,22 @@
     </div>
 
     <!-- Floating Contact Buttons -->
-    <div class="social-float">
+       <div class="social-float">
         <a href="tel:0984500465" class="icon phone" title="Gọi điện">
-            <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone">
+            <img src="{{ asset('image/phone.png') }}" alt="Phone">
         </a>
         <a href="https://zalo.me/0939294917" target="_blank" class="icon zalo" title="Zalo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo">
+            <img src="{{ asset('image/Icon_of_Zalo.svg') }}" alt="Zalo">
         </a>
-        <a href="https://m.me/yourpage" target="_blank" class="icon messenger" title="Messenger">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Facebook_Messenger_4_Logo.svg"
+        {{-- <a href="https://www.facebook.com/profile.php?id=61581902981013" target="_blank" class="icon messenger" title="Messenger">
+            <img src="{{ asset('image/Messenger_Icon.svg') }}"
                 alt="Messenger">
-        </a>
-        <a href="https://maps.app.goo.gl/yourlocation" target="_blank" class="icon maps" title="Bản đồ">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Google_Maps_icon.svg" alt="Maps">
-        </a>
+        </a> --}}
         <a href="#" class="icon to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Lên đầu trang">
-            <img src="https://cdn-icons-png.flaticon.com/512/892/892692.png" alt="Up">
+           <i class="fa-solid fa-arrow-up fs-3 text-white"></i>
         </a>
     </div>
+
 
 
     <footer></footer>

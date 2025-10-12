@@ -8,10 +8,11 @@ $product = WifiProduct::where('id',$data->wifi_product_id)->first();
 @endphp
 
 Thông tin đặt sản phẩm
-<p>Tên khách hàng: {{ $data->name }}</p>
-<p>Số điện thoại {{ preg_replace('/(\d{4})(\d{3})(\d{3})/','$1.$2.$3', $data->phone) }}</p>
-<p>Địa chỉ {{ $data->address }} - {{ $commune->name }} - {{ $province->name }}</p>
-<p>Tên sản phẩm: {{$product->name}}</p>
+<p>Tên khách hàng: <strong>{{ $data->name }}</strong></p>
+<a href="tel:{{ $data->phone }}">Số điện thoại <strong>{{ preg_replace('/(\d{4})(\d{3})(\d{3})/','$1.$2.$3',
+        $data->phone) }}</strong></a>
+<p>Địa chỉ: <strong> {{ $data->address }} - {{ $commune->name }} - {{ $province->name }}</strong></p>
+<p>Tên sản phẩm: <strong>{{$product->name}}</strong></p>
 {{-- <x-mail::button :url="''">
     Button Text
 </x-mail::button> --}}

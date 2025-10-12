@@ -68,14 +68,15 @@ class FpttelecomOrder extends Component
                 'wifi_product_id'   => $this->wifiProduct->id
             ];
 
-              $order =  Client::create($data);
+            $order =  Client::create($data);
 
 
-              event(new UserOrder($order));
+            event(new UserOrder($order));
             $this->dispatch('swal', [
-                'title' => 'Đăng ký lắp Wi-Fi thành công!',
-                'icon'  => 'success',
-                'text'  => 'Sẽ có nhân viên liên hệ tư vấn cho quý khách, Xin cảm ơn đã sử dụng dịch vụ !'
+                'title'         => 'Đăng ký lắp Wi-Fi thành công!',
+                'icon'          => 'success',
+                'text'          => 'Sẽ có nhân viên liên hệ tư vấn cho quý khách, Xin cảm ơn đã sử dụng dịch vụ !',
+                'redirect'      => '/'
             ]);
             session()->flash('success', 'Đăng ký thành công!');
             DB::commit();
