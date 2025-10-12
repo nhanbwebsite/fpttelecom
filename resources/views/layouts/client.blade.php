@@ -9,6 +9,25 @@
     <link rel="shortcut" icon” href="{{  asset('image/favicon.ico') }}" type=”image/x-icon” />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta name="description"
+        content="Đăng ký gói cước Internet FPT tốc độ cao, ổn định, giá ưu đãi nhất. Hỗ trợ lắp đặt miễn phí toàn quốc.">
+    <meta name="keywords" content="Internet FPT, Wifi FPT, Lắp mạng FPT, Gói cước FPT Telecom">
+
+    {{-- --}}
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ request()->url() }}"> <!-- Đổi link thật -->
+    <meta property="og:title" content="Gói cước Internet FPT tốc độ cao, ưu đãi hấp dẫn">
+    <meta property="og:description"
+        content="Tư vấn, lắp đặt Internet FPT chỉ trong 24h. Đăng ký ngay để nhận ưu đãi đến 50%.">
+    <meta property="og:image" content="{{ asset('image/goi360.png') }}"> <!-- Ảnh đại diện share -->
+    <meta property="og:image:alt" content="Gói cước Internet FPT tốc độ cao, ưu đãi hấp dẫn">
+    <meta property="og:site_name" content="Internet FPT Telecom">
+
+
+    {{-- --}}
+
+
     <meta name="robots" content="index, follow">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -310,19 +329,19 @@
     </div>
 
     <!-- Floating Contact Buttons -->
-       <div class="social-float">
+    <div class="social-float">
         <a href="tel:0984500465" class="icon phone" title="Gọi điện">
             <img src="{{ asset('image/phone.png') }}" alt="Phone">
         </a>
         <a href="https://zalo.me/0939294917" target="_blank" class="icon zalo" title="Zalo">
             <img src="{{ asset('image/Icon_of_Zalo.svg') }}" alt="Zalo">
         </a>
-        {{-- <a href="https://www.facebook.com/profile.php?id=61581902981013" target="_blank" class="icon messenger" title="Messenger">
-            <img src="{{ asset('image/Messenger_Icon.svg') }}"
-                alt="Messenger">
+        {{-- <a href="https://www.facebook.com/profile.php?id=61581902981013" target="_blank" class="icon messenger"
+            title="Messenger">
+            <img src="{{ asset('image/Messenger_Icon.svg') }}" alt="Messenger">
         </a> --}}
         <a href="#" class="icon to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Lên đầu trang">
-           <i class="fa-solid fa-arrow-up fs-3 text-white"></i>
+            <i class="fa-solid fa-arrow-up fs-3 text-white"></i>
         </a>
     </div>
 
