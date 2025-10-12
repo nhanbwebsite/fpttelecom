@@ -6,7 +6,8 @@
 
 <div>
     <style>
-        .custom-select.form-control-border, .form-control.form-control-border {
+        .custom-select.form-control-border,
+        .form-control.form-control-border {
             box-shadow: none;
             outline: none;
             border: none;
@@ -29,6 +30,7 @@
                                 <th>Địa chỉ</th>
                                 <th>Trạng thái</th>
                                 <th>Sản phẩm</th>
+                                <th>Tác vụ</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -42,15 +44,22 @@
                                 <td>
                                     <div class="form-group mb-0">
                                         <select class="custom-select form-control-border">
-                                            <option @if($order->status == 1) selected  @endif value="1">Chưa giải quyết</option>
-                                            <option @if($order->status == 2) selected  @endif value="2">Đang thực hiện</option>
-                                            <option @if($order->status == 3) selected  @endif value="3">Hoàn thành</option>
-                                            <option @if($order->status == 4) selected  @endif value="4">Thất bại</option>
-                                            <option @if($order->status == 5) selected  @endif value="5">Chờ tư vấn lại</option>
+                                            <option @if($order->status == 1) selected @endif value="1">Chưa giải quyết
+                                            </option>
+                                            <option @if($order->status == 2) selected @endif value="2">Đang thực hiện
+                                            </option>
+                                            <option @if($order->status == 3) selected @endif value="3">Hoàn thành
+                                            </option>
+                                            <option @if($order->status == 4) selected @endif value="4">Thất bại</option>
+                                            <option @if($order->status == 5) selected @endif value="5">Chờ tư vấn lại
+                                            </option>
                                         </select>
                                     </div>
                                 </td>
                                 <td> {{ $order->product->name }} </td>
+                                <td>
+                                    <i class="fas fa-trash fs-3" onclick="confirmDelete({{ $order->id }})"></i>
+                                </td>
                             </tr>
                             @endforeach
 
@@ -113,6 +122,37 @@
       "responsive": true,
     });
   });
+</script>
+
+<script>
+    function confirmDelete(id) {
+        Swal.fire({
+            title: "Bạn có chắc muốn xóa?",
+            text: "Hành động này không thể hoàn tác!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonText: "Xóa",
+            cancelButtonText: "Hủy",
+            confirmButtonColor: "#d33",
+            cancelButtonColor: "#3085d6",
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Livewire.dispatch('deleteConfirmed', { id: id });
+            }
+        });
+    }
+</script>
+
+<script>
+
+    Livewire.on('swal', data => {
+         Swal.fire({
+                title: data[0].title,
+                icon: data[0].icon ?? 'danger',
+                text:  data[0].text ?? '',
+                confirmButtonText: 'OK',
+            })
+    });
 </script>
 
 @endpush

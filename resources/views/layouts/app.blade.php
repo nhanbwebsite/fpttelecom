@@ -15,7 +15,14 @@
     @stack('styles')
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('admin/dist/css/adminlte.min.css') }}">
+       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     @stack('scriptsHeader')
+    <style>
+        .fas.fa-trash{
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
