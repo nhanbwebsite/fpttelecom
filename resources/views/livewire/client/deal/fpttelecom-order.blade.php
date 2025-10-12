@@ -160,7 +160,7 @@
 
 
     <form wire:submit.prevent='confirmOrder'>
-        <div class="row g-4">
+        <div class="row g-4 conform__order-container">
             <!-- BÊN TRÁI -->
             <div class="col-md-7">
                 <h2 class="mb-4 fw-bold">Thông tin đăng ký Wi-Fi FPT</h2>

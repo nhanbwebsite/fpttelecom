@@ -219,12 +219,16 @@
                 right: 0;
                 left: 0;
             }
+
+            .conform__order-container .card {
+                padding: 0;
+            }
         }
 
         .social-float {
             position: fixed;
             right: 20px;
-            bottom: 60px;
+            bottom: 190px;
             display: flex;
             flex-direction: column;
             gap: 12px;
@@ -243,6 +247,8 @@
             box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
             transition: all 0.3s ease;
         }
+
+
 
         .social-float .icon img {
             width: 30px;
