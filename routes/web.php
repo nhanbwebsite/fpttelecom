@@ -16,8 +16,10 @@ use Livewire\Volt\Volt;
 */
 
 // Route::view('/', 'welcome');
-   Volt::route('/', 'client.deal.fpttelecom')
-        ->name('deal.fpttelecom');
+Volt::route('/', 'client.deal.fpttelecom')
+    ->name('deal.fpttelecom');
+Volt::route('/payment-success-ful', 'client.payment-successful')
+    ->name('client.payment-successful');
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
@@ -26,7 +28,7 @@ Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
-Route::get('/test',[provincesTest::class,'create']);
+Route::get('/test', [provincesTest::class, 'create']);
 Route::get('/counter', Counter::class);
 require __DIR__ . '/deal.php';
 require __DIR__ . '/auth.php';

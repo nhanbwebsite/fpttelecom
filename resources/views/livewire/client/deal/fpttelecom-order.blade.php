@@ -229,12 +229,12 @@
                     <button style="width:100%" type="submit" class="btn btn-primary">Gửi thông tin đăng ký</button>
                 </div>
 
-                <p class="note mt-3">
+                {{-- <p class="note mt-3">
                     Bằng việc bấm Gửi thông tin đăng ký quý khách đã đồng ý để FPT Telecom liên hệ tư vấn dịch vụ phù
                     hợp với nhu
                     cầu.
                     Chi tiết xem tại <a href="#">Chính sách xử lý dữ liệu cá nhân</a>.
-                </p>
+                </p> --}}
             </div>
 
             <!-- BÊN PHẢI -->

@@ -80,6 +80,8 @@ class FpttelecomOrder extends Component
             ]);
             session()->flash('success', 'Đăng ký thành công!');
             DB::commit();
+
+            return redirect('client.payment-successful')->with('success','Đăng ký thành công');
         } catch (HttpException $e) {
             DB::rollBack();
         }
