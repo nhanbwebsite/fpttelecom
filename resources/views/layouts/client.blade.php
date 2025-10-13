@@ -330,10 +330,10 @@
         <a href="https://zalo.me/0939294917" target="_blank" class="icon zalo" title="Zalo">
             <img src="{{ asset('image/Icon_of_Zalo.svg') }}" alt="Zalo">
         </a>
-        {{-- <a href="https://www.facebook.com/profile.php?id=61581902981013" target="_blank" class="icon messenger"
+        <a href="https://m.me/61581902981013" target="_blank" class="icon messenger"
             title="Messenger">
             <img src="{{ asset('image/Messenger_Icon.svg') }}" alt="Messenger">
-        </a> --}}
+        </a>
         <a href="#" class="icon to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Lên đầu trang">
             <i class="fa-solid fa-arrow-up fs-3 text-white"></i>
         </a>
