@@ -327,7 +327,7 @@
         <a href="tel:0984500465" class="icon phone" title="Gọi điện">
             <img src="{{ asset('image/phone.png') }}" alt="Phone">
         </a>
-        <a href="https://zalo.me/0939294917" target="_blank" class="icon zalo" title="Zalo">
+        <a href="https://zalo.me/0984500465" target="_blank" class="icon zalo" title="Zalo">
             <img src="{{ asset('image/Icon_of_Zalo.svg') }}" alt="Zalo">
         </a>
         <a href="https://m.me/61581902981013" target="_blank" class="icon messenger"
