@@ -334,9 +334,9 @@
             title="Messenger">
             <img src="{{ asset('image/Messenger_Icon.svg') }}" alt="Messenger">
         </a> --}}
-        <a href="#" class="icon to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Lên đầu trang">
+        {{-- <a href="#" class="icon to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Lên đầu trang">
             <i class="fa-solid fa-arrow-up fs-3 text-white"></i>
-        </a>
+        </a> --}}
     </div>
 
 
