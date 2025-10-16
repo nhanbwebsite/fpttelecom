@@ -27,6 +27,9 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     @stack('styles')
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @stack('scriptsHeader')
@@ -175,7 +178,7 @@
         .image__product img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            /* object-fit: cover; */
             /* cắt ảnh vừa khung mà không méo */
             object-position: center;
             display: block;
@@ -272,6 +275,28 @@
             transform: translateY(-4px);
             background: #0073b1;
         }
+
+
+        swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        swiper-slide {
+            text-align: center;
+            font-size: 18px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
 </head>
 
@@ -322,6 +347,8 @@
     </div>
     </div>
 
+
+
     <!-- Floating Contact Buttons -->
     <div class="social-float">
         <a href="tel:0984500465" class="icon phone" title="Gọi điện">
@@ -330,8 +357,7 @@
         <a href="https://zalo.me/0984500465" target="_blank" class="icon zalo" title="Zalo">
             <img src="{{ asset('image/Icon_of_Zalo.svg') }}" alt="Zalo">
         </a>
-        {{-- <a href="https://m.me/61581902981013" target="_blank" class="icon messenger"
-            title="Messenger">
+        {{-- <a href="https://m.me/61581902981013" target="_blank" class="icon messenger" title="Messenger">
             <img src="{{ asset('image/Messenger_Icon.svg') }}" alt="Messenger">
         </a> --}}
         {{-- <a href="#" class="icon to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Lên đầu trang">
@@ -348,7 +374,7 @@
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
 
 </script>
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 @stack('scriptsFooter')
 
 </html>
