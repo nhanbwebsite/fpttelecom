@@ -41,6 +41,17 @@
   gtag('config', 'G-DT9YH6L0KB');
     </script>
 
+    {{-- ads --}}
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DT9YH6L0KB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DT9YH6L0KB');
+    </script>
+
     @stack('styles')
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @stack('scriptsHeader')
