@@ -20,6 +20,10 @@ class Client extends Model
         'created_at',
         'deleted_at',
         'deleted',
+        'updated_by',
+        'deleted_by',
+        'created_by',
+        'deleted'
     ];
 
     public function product()

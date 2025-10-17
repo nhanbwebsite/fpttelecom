@@ -5,17 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Commune extends Model
+class Category extends Model
 {
     use HasFactory;
-       protected $fillable = [
+    protected $table = 'categories';
+    protected $fillable = [
         'name',
-        'code',
-        'id',
-        'englishName',
-        'administrativeLevel',
-        'provinceCode',
-         'updated_at',
+        'updated_at',
         'created_at',
         'deleted_at',
         'deleted',

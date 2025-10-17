@@ -9,12 +9,20 @@ class WifiProduct extends Model
 {
     use HasFactory;
     protected $table = 'wifi_products';
-      protected $fillable = [
+    protected $fillable = [
         'name',
         'slug',
         'price',
         'description',
         'utility',
-        'image'
+        'image',
+        'updated_at',
+        'created_at',
+        'deleted_at',
+        'deleted',
+        'updated_by',
+        'deleted_by',
+        'created_by',
+        'deleted'
     ];
 }

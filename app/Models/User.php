@@ -21,6 +21,14 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'updated_at',
+        'created_at',
+        'deleted_at',
+        'deleted',
+        'updated_by',
+        'deleted_by',
+        'created_by',
+        'deleted'
     ];
 
     /**
@@ -33,7 +41,7 @@ class User extends Authenticatable
         'remember_token',
     ];
 
-    /** 
+    /**
      * The attributes that should be cast.
      *
      * @var array<string, string>
