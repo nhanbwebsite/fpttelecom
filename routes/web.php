@@ -28,7 +28,10 @@ Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
-Route::get('/test', [provincesTest::class, 'create']);
+// Route::get('/test', [provincesTest::class, 'create']);
+Route::get('/test',function(){
+    return view('test');
+});
 Route::get('/counter', Counter::class);
 require __DIR__ . '/deal.php';
 require __DIR__ . '/auth.php';
