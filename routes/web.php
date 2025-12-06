@@ -32,6 +32,11 @@ Route::view('profile', 'profile')
 Route::get('/test',function(){
     return view('test');
 });
+
+ Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
+     \UniSharp\LaravelFilemanager\Lfm::routes();
+ });
+
 Route::get('/counter', Counter::class);
 require __DIR__ . '/deal.php';
 require __DIR__ . '/auth.php';
