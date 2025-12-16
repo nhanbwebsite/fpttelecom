@@ -37,6 +37,10 @@ Route::get('/test',function(){
      \UniSharp\LaravelFilemanager\Lfm::routes();
  });
 
+
+
 Route::get('/counter', Counter::class);
 require __DIR__ . '/deal.php';
 require __DIR__ . '/auth.php';
+
+

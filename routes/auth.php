@@ -28,5 +28,8 @@ Route::middleware('auth')->group(function () {
         ->name('password.confirm');
     Volt::route('/order', 'admin.order.OrderController')
         ->name('admin.order.ordercontroller');
+    Volt::route('/files', 'admin.Files')
+        ->name('admin.files');
+        Volt::route('/menus', 'admin.Menu')
+        ->name('admin.menu');
 });
-

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>AdminLTE 3 | Dashboard</title>
 
     <!-- Google Font: Source Sans Pro -->
@@ -264,6 +265,24 @@
                             </ul>
                         </li>
 
+                         <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-copy"></i>
+                                <p>
+                                    Quản lí files
+                                    <i class="fas fa-angle-left right"></i>
+                                    <span class="badge badge-info right">6</span>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="pages/layout/top-nav.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Files</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
